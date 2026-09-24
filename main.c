@@ -6,23 +6,28 @@ int main()
     int opcao;
     float num1, num2;
     float resultado;
-
+    printf("===============CALCULADORA EM C===============\n");
+    printf("1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair\n");
+    printf("Digite a opcao: ");
+    scanf("%d", &opcao);
+    
+    while((opcao < 0) || (opcao > 4)) {
+        printf("Opcao invalida! Digite uma opcao valida:(1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair):\n");
+        printf("Digite a opcao: ");
+        scanf("%d", &opcao);
+    }
+    
+    if(opcao == 0) {
+        printf("==SAINDO DO PROGRAMA..==\n");
+        return 0;
+    } 
+    
     printf("Digite um numero: ");
     scanf("%f", &num1);
     printf("Digite outro numero: ");
     scanf("%f", &num2);
-
-    printf("1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair\n");
-    printf("Digite a opcao: ");
-    scanf("%d", &opcao);
-    while((opcao < 0) || (opcao > 4)) {
-        printf("Opcao invalida: Digite uma opcao valida: (1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair)");
-        scanf("%d", &opcao);
-    }
- 
-    if(opcao == 0) {
-        printf("==SAINDO DO PROGRAMA..==\n");
-    } else if(opcao == 1) {
+    
+    if(opcao == 1) {
         printf("--ADICAO--\n");
         resultado = num1 + num2;
     } else if(opcao == 2) {
