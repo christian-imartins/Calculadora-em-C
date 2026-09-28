@@ -21,7 +21,7 @@ int main()
     while(opcao != 0) {
     
     if(opcao == 1) {
-        printf("--ADICAO--\n");
+        printf("\n--ADICAO--\n");
         printf("Digite a primeira parcela: ");
         scanf("%f", &num1);
         printf("Digite a segunda parcela: ");
@@ -29,7 +29,7 @@ int main()
         printf("Soma: %g + %g = %g\n", num1, num2, num1 + num2);
 
     } else if(opcao == 2) {
-        printf("==SUBTRACAO==\n");
+        printf("\n==SUBTRACAO==\n");
         printf("Digite o minuendo: ");
         scanf("%f", &num1);
         printf("Digite o subtraendo: ");
@@ -37,7 +37,7 @@ int main()
         printf("Diferenca: %g - %g = %g\n", num1, num2, num1 - num2);
 
     } else if(opcao == 3) {
-        printf("==MULTIPLICACAO==\n");
+        printf("\n==MULTIPLICACAO==\n");
         printf("Digite o multiplicando: ");
         scanf("%f", &num1);
         printf("Digite o multiplicador: ");
@@ -45,7 +45,7 @@ int main()
         printf("Produto: %g * %g = %g\n", num1, num2, num1 * num2);
         
     } else {
-        printf("==DIVISAO==\n");
+        printf("\n==DIVISAO==\n");
         printf("Digite o dividendo: ");
         scanf("%f", &num1);
         printf("Digite o divisor: ");
@@ -57,7 +57,7 @@ int main()
         printf("Quociente: %g / %g = %g\n", num1, num2, num1 / num2);  
     }
 
-    printf("1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair\n");
+    printf("\n1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair\n");
     printf("Digite a opcao: ");
     scanf("%d", &opcao);
     
@@ -67,7 +67,7 @@ int main()
         scanf("%d", &opcao);
     }
 }
-    printf("==SAINDO..==\n");
+    printf("\n==SAINDO..==\n");
     while (getchar() != '\n' && getchar() != EOF);
     printf("Digite ENTER para fechar o programa\n");
     getchar();
