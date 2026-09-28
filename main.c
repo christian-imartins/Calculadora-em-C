@@ -20,10 +20,7 @@ int main()
     
     if(opcao == 0) {
         printf("==SAINDO DO PROGRAMA..==\n");
-        return 0;
-    } 
-    
-    if(opcao == 1) {
+    } else if(opcao == 1) {
         printf("--ADICAO--\n");
         printf("Digite a primeira parcela: ");
         scanf("%f", &num1);
@@ -59,6 +56,8 @@ int main()
         }
         printf("Quociente: %g / %g = %g\n", num1, num2, num1 / num2);  
     }
+    printf("Digite ENTER para fechar o programa\n");
+    getchar();
 
     return 0;
 }
