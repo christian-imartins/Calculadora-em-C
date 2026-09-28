@@ -4,23 +4,23 @@
 int main()
 {
     
-    int opcao;
+    int opcao ;
     float num1, num2;
 
     printf("===============CALCULADORA EM C===============\n");
+
     printf("1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair\n");
     printf("Digite a opcao: ");
     scanf("%d", &opcao);
-    
-    while((opcao < 0) || (opcao > 4)) {
+       while((opcao < 0) || (opcao > 4)) {
         printf("Opcao invalida! Digite uma opcao valida:(1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair):\n");
         printf("Digite a opcao: ");
         scanf("%d", &opcao);
     }
+
+    while(opcao != 0) {
     
-    if(opcao == 0) {
-        printf("==SAINDO DO PROGRAMA..==\n");
-    } else if(opcao == 1) {
+    if(opcao == 1) {
         printf("--ADICAO--\n");
         printf("Digite a primeira parcela: ");
         scanf("%f", &num1);
@@ -56,6 +56,19 @@ int main()
         }
         printf("Quociente: %g / %g = %g\n", num1, num2, num1 / num2);  
     }
+
+    printf("1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair\n");
+    printf("Digite a opcao: ");
+    scanf("%d", &opcao);
+    
+    while((opcao < 0) || (opcao > 4)) {
+        printf("Opcao invalida! Digite uma opcao valida:(1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair):\n");
+        printf("Digite a opcao: ");
+        scanf("%d", &opcao);
+    }
+}
+    printf("==SAINDO..==\n");
+    while (getchar() != '\n' && getchar() != EOF);
     printf("Digite ENTER para fechar o programa\n");
     getchar();
 
