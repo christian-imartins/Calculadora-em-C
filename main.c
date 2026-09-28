@@ -13,7 +13,7 @@ int main()
     scanf("%d", &opcao);
     
     while((opcao < 0) || (opcao > 4)) {
-        printf("Opção invalida! Digite uma opção valida:(1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair):\n");
+        printf("Opcao invalida! Digite uma opcao valida:(1 - Adicao | 2 - Subtracao | 3 - Multiplicacao | 4 - Divisao | 0 - Sair):\n");
         printf("Digite a opcao: ");
         scanf("%d", &opcao);
     }
